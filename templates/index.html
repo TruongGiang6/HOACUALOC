@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handmade Haven</title>
+    <title>LA FLOWER</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Handmade Haven">
-                <h1>Handmade Haven</h1>
-                <p>Mang yêu thương diệu kỳ từ đôi tay</p>
+                <img src="{{ url_for('static', filename='images/La.FLOW.jpg') }}" alt="LA FLOWER">
+                <div class="logo-text">
+                    <h1>LA FLOWER</h1>
+                    <p>Mang yêu thương diệu kỳ từ đôi tay</p>
+                </div>
             </div>
             <nav>
                 <ul>
                     <li><a href="#">Trang Chủ</a></li>
-                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Sản Phẩm &#9662;</a></li>
                     <li><a href="#">Giới Thiệu</a></li>
                     <li><a href="#">Liên Hệ</a></li>
                 </ul>
             </nav>
             <div class="header-icons">
-                <a href="#">Tài khoản</a>
+                <a href="#">&#128100; Tài khoản</a>
                 <a href="#">&#9825;</a>
                 <a href="#">&#128722;</a>
-                <a href="#">&#128269;</a>
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <a href="#">&#128269;</a>
+                </div>
             </div>
         </div>
     </header>

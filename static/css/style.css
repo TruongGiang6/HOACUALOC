@@ -25,19 +25,24 @@ header .container {
 }
 
 .logo {
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    width: 50px; /* Adjust as needed */
+    width: 80px;
+    margin-right: 10px;
+    background: transparent;
+    mix-blend-mode: multiply;
 }
 
-.logo h1 {
+.logo-text h1 {
     margin: 0;
     font-size: 1.2rem;
+    color: #d9534f;
 }
 
-.logo p {
+.logo-text p {
     margin: 0;
     font-size: 0.8rem;
     color: #888;
@@ -60,9 +65,34 @@ nav a {
     font-weight: bold;
 }
 
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
 .header-icons a {
     margin-left: 1rem;
     text-decoration: none;
+    color: #333;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-container a {
+    margin-left: 5px;
     color: #333;
 }
 
@@ -169,7 +199,9 @@ footer .container {
 }
 
 .footer-about img {
-    width: 50px;
+    width: 70px;
+    background: transparent; /* Xóa nền */
+    mix-blend-mode: multiply; /* Xóa nền trắng nếu có */
 }
 
 footer h3 {
