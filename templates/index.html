@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Haven</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Handmade Haven">
+                <h1>Handmade Haven</h1>
+                <p>Mang yêu thương diệu kỳ từ đôi tay</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#">Tài khoản</a>
+                <a href="#">&#9825;</a>
+                <a href="#">&#128722;</a>
+                <a href="#">&#128269;</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Quà Tặng Tự Tay - Trọn Vẹn Yêu Thương</h2>
+            <p>Khám Phá Bộ Sưu Tập mới nhất</p>
+            <a href="#" class="btn">MUA NGAY</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="products">
+            <h2>SẢN PHẨM MỚI NHẤT</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1520763185226-6b7384553155?w=500" alt="Bó Hoa Len Pastel">
+                    <h3>Bó Hoa Len Pastel</h3>
+                    <p>250.000 VND</p>
+                    <a href="#" class="btn-add">Thêm vào giỏ</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1558636647-b7b545693499?w=500" alt="Gấu Bông Len Mềm Mại">
+                    <h3>Gấu Bông Len Mềm Mại</h3>
+                    <p>320.000 VND</p>
+                    <a href="#" class="btn-add">Thêm vào giỏ</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1587054293697-9d35a1635d14?w=500" alt="Set Quà Tặng Yêu Thương">
+                    <h3>Set Quà Tặng Yêu Thương</h3>
+                    <p>450.000 VND</p>
+                    <a href="#" class="btn-add">Thêm vào giỏ</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1589925495837-1a093118f934?w=500" alt="Móc Khóa Len Mini">
+                    <h3>Móc Khóa Len Mini</h3>
+                    <p>50.000 VND</p>
+                    <a href="#" class="btn-add">Thêm vào giỏ</a>
+                </div>
+                 <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1567692254911-674a87b960e4?w=500" alt="Móc Khóa Len Mini">
+                    <h3>Mạch</h3>
+                    <p>80.000 VND</p>
+                    <a href="#" class="btn-add">Thêm vào giỏ</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>GẤU BÔNG</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1546872006-7e9e8c8a184e?w=500" alt="Gấu Bông">
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1516627145405-54a804293317?w=500" alt="Gấu Bông">
+                </div>
+                <div class="feature-item">
+                    <p>100% HANDMADE</p>
+                </div>
+                <div class="feature-item">
+                    <p>GIAO HÀNG NHANH CHÓNG</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-about">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Handmade Haven">
+                <p>Handmade Haven</p>
+                <p>Mang yêu thương diệu kỳ từ đôi tay</p>
+            </div>
+            <div class="footer-links">
+                <h3>Liên Lạc</h3>
+                <p>Citrix cubub dii nå</p>
+                <p>Bulot bnulgt loi/šema</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Liên Hệ</h3>
+                <p>11-15/tinit ritemartidin</p>
+                <p>96 13 608 15059</p>
+                <p>Dial thalin X3102H0 cking</p>
+            </div>
+            <div class="footer-social">
+                <div class="social-icons">
+                    <a href="#">f</a>
+                    <a href="#">&#9993;</a>
+                    <a href="#">&#128222;</a>
+                </div>
+                <form>
+                    <label for="subscribe">Bảng tin</label>
+                    <input type="email" id="subscribe" placeholder="Địa chỉ email">
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Handmade Haven. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
